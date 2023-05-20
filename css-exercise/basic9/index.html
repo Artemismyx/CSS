@@ -31,12 +31,26 @@
             bottom: -250px; /* 调整part2.png的垂直位置 */
             left :400px;
         }
+        .text-container {
+            position: relative;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 24px; /* 调节文字大小 */
+            color: rgb(244, 7, 7);
+            position: absolute;
+            bottom: 20px; /* 调节文字垂直位置 */
+            left: 50%; /* 调节文字水平位置 */
+            transform: translateX(-50%);
+        }
     </style>
 </head>
 <body>
     <div class="overlay">
         <img src="part1.jpg" alt="Overlay Image1">
         <img src="part2.png" alt="Overlay Image2">
+        <div class="text">This is the inserted text</div>
     </div>
 </body>
 </html>
