@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image {
+            position: relative;
+            width: 30%;
+            height: auto;
+        }
+
+        .image:first-child {
+            left: 0;
+        }
+
+        .image:last-child {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img class="image" src="one.jpg" alt="Photo 1">
+        <img class="image" src="two.jpg" alt="Photo 2">
+        <img class="image" src="three.jpg" alt="Photo 3">
+    </div>
+</body>
+</html>
