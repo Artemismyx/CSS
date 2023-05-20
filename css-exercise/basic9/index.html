@@ -12,32 +12,35 @@
             height: 100vh;
         }
 
-        .image-container {
+        .overlay {
             position: relative;
+            width: 50%;
         }
 
-        .image-container img {
+        .overlay img {
             position: absolute;
-            width: 30%;
+            top: 0;
+            left: 0;
+            width: 100%;
             height: auto;
             object-fit: cover;
         }
 
-        .image1 {
-            top: 20%;
-            left: 10%;
+        .overlay img:first-child {
+            z-index: 2;
+            right: 0;
         }
 
-        .image2 {
-            top: 40%;
-            left: 40%;
+        .overlay img:last-child {
+            z-index: 1;
+            left: 0;
         }
     </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="part1.jpg" alt="Foreground 1" class="image1">
-        <img src="part2.png" alt="Foreground 2" class="image2">
+    <div class="overlay">
+        <img src="part1.jpg" alt="Foreground 1">
+        <img src="part2.png" alt="Foreground 2">
     </div>
 </body>
 </html>
