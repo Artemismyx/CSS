@@ -21,23 +21,6 @@ h1{
 } 
 h1:hover{color:yellow}
 
-h2{ font-size: 2rem;
-    color:#210440}
-    h2:hover{color:yellow}
-
-h3{ font-size: 2rem;
-    color:#210440}
-    h3:hover{color:yellow}
-
-h4{ font-size: 2rem;
-    color:#210440}
-    h4:hover{color:yellow}
-
-h5{ font-size: 2rem;
-    color:#210440}
-    h5:hover{color:yellow}
-
-
 p{
     color: rgb(255, 2, 221,0.7);
     width: 100%;
