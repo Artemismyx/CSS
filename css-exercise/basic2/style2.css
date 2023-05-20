@@ -1,18 +1,18 @@
 html{
-    font-size: 12pt;
+    font-size: 24pt;
 }
 
 body {
     background-color: #fdb495;
     width: 800px;
-    font-size: 12pt;
+    font-size: 24pt;
 }
 
 article{
-    font-size: 1em;
+    font-size: 2em;
 }
 h1{
-    font-size: 1rem;
+    font-size: 2rem;
     color: #210440; text-shadow: -1px -1px 1px #aaa,
     0px 4px 1px rgba(0,0,0,0.5),
     4px 4px 5px rgba(0,0,0,0.7),
@@ -21,7 +21,7 @@ h1{
 } 
 h1:hover{color:rgb(255, 0, 119)}
 
-h2{ font-size: 1rem;
+h2{ font-size: 2rem;
     color:#210440}
     h2:hover{color:rgb(0, 30, 255)}
 
