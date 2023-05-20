@@ -1,18 +1,18 @@
 html{
-    font-size: 24pt;
+    font-size: 12pt;
 }
 
 body {
     background-color: #eafd95;
     width: 800px;
-    font-size: 24pt;
+    font-size: 12pt;
 }
 
 article{
-    font-size: 2em;
+    font-size: 1em;
 }
 h1{
-    font-size: 2rem;
+    font-size: 1rem;
     color: #210440; text-shadow: -1px -1px 1px #aaa,
     0px 4px 1px rgba(0,0,0,0.5),
     4px 4px 5px rgba(0,0,0,0.7),
