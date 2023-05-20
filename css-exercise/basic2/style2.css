@@ -3,7 +3,7 @@ html{
 }
 
 body {
-    background-color: #eafd95;
+    background-color: #a6fd95;
     width: 800px;
     font-size: 12pt;
 }
@@ -21,7 +21,7 @@ h1{
 } 
 h1:hover{color:rgb(255, 0, 119)}
 
-h2{ font-size: 2rem;
+h2{ font-size: 1rem;
     color:#210440}
     h2:hover{color:rgb(0, 30, 255)}
 
