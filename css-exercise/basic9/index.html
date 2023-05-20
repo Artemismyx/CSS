@@ -2,24 +2,45 @@
 <html>
 <head>
     <style>
-        .image-container {
-            width: 100%;
+        body {
+            background-image: url("总.png");
+            background-size: cover;
+            background-repeat: no-repeat;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        .image-container img {
-            width: 30%;
+        .overlay {
+            position: relative;
+            width: 50%;
+        }
+
+        .overlay img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
             height: auto;
             object-fit: cover;
+        }
+
+        .overlay img:first-child {
+            z-index: 2;
+            right: 0;
+        }
+
+        .overlay img:last-child {
+            z-index: 1;
+            left: 0;
         }
     </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="总.png" alt="Photo 1">
-        <img src="part1.jpg" alt="Photo 2">
-        <img src="part2.png" alt="Photo 3">
+    <div class="overlay">
+        <img src="part1.jpg" alt="Foreground 1">
+        <img src="part2.png" alt="Foreground 2">
     </div>
 </body>
 </html>
