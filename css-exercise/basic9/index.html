@@ -31,13 +31,22 @@
             bottom: -250px; /* 调整part2.png的垂直位置 */
             left :400px;
         }
-        
+        .overlay p {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgb(235, 6, 25);
+            font-size: 24px; /* 调整字体大小 */
+            font-weight: bold; /* 设置粗体 */
+        }
     </style>
 </head>
 <body>
     <div class="overlay">
         <img src="part1.jpg" alt="Overlay Image1">
         <img src="part2.png" alt="Overlay Image2">
+        <p>This is the added text</p>
     </div>
 </body>
 </html>
