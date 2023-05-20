@@ -38,6 +38,19 @@
             bottom: -50px; /* 调整垂直位置 */
             left:70px;
         }
+        .text-container {
+            position: relative;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 36px; /* 调节文字大小 */
+            color: rgb(250, 1, 1);
+            position: absolute;
+            bottom: 300px; /* 调节文字垂直位置 */
+            left: 470px; /* 调节文字水平位置 */
+            transform: translateX(-50%);
+        }
     </style>
 </head>
 <body>
@@ -45,6 +58,9 @@
         <img class="image" src="one.jpg" alt="Photo 1">
         <img class="image" src="two.jpg" alt="Photo 2">
         <img class="image" src="three.jpg" alt="Photo 3">
+    </div>
+    <div class="text-container">
+        <div class="text">周深我爱你！</div>
     </div>
 </body>
 </html>
