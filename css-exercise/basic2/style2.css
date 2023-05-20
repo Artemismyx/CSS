@@ -3,7 +3,7 @@ html{
 }
 
 body {
-    background-color: #fdb495;
+    background-color: #fdb095;
     width: 800px;
     font-size: 24pt;
 }
@@ -19,38 +19,51 @@ h1{
     0px 0px 7px rgba(0,0,0,0.4);
    
 } 
-h1:hover{color:rgb(255, 0, 119)}
+h1:hover{color:yellow}
 
 h2{ font-size: 2rem;
     color:#210440}
-    h2:hover{color:rgb(0, 30, 255)}
+    h2:hover{color:yellow}
+
+h3{ font-size: 2rem;
+    color:#210440}
+    h3:hover{color:yellow}
+
+h4{ font-size: 2rem;
+    color:#210440}
+    h4:hover{color:yellow}
+
+h5{ font-size: 2rem;
+    color:#210440}
+    h5:hover{color:yellow}
+
 
 p{
-    color: rgba(6, 2, 255, 0.7);
+    color: rgb(255, 2, 221,0.7);
     width: 100%;
     font-size: 0.5rem;
 
 }
 
 a{
-    color:rgb(144, 53, 255);
+    color:rgb(255, 53, 97);
     font-size: 0.7rem;
 }
 
-.myclass{color:#d35590}
+.myclass{color:#d36055}
 .myclass{font-size: 0.5rem;}
 .myclass:hover{font-size: 0.55rem;}
     
    
 
-.green{color: rgb(119, 43, 226);}
+.green{color: blueviolet;}
 
 #first{
     font-weight: bold;
 }
 
 body article p {
-	color: rgb(255, 115, 0);
+	color: yellow;
 }
 p:hover{
     color: rgb(255, 53, 97);font-size: 0.55rem
