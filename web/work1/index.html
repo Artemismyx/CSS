@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Website</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" href="#" />
-    <style>
-      a:hover {
-        color: rgb(225, 62, 17);
-      }
-      
-      #content-frame {
-        width: 70%;
-        height: 100%;
-        float: right;
-      }
-    </style>
-  </head>
-  <body>
-    <ol>
-      <p>平时作业</p>
-      <li><a href="影/index.html" target="content-frame">《影》分镜头拉片</a></li>
-      <li><a href="寄生虫/index.html" target="content-frame">《寄生虫》分镜头拉片</a></li>
-      <p>期末作业</p>
-      <p>微电影《Doppeganger》(《二重身》)</p>
-      <li><a href="剧本/index.html" target="content-frame">剧本</a></li>
-      <li><a href="分镜/index.html" target="content-frame">分镜</a></li>
-      <li><a href="最终成片/index.html" target="content-frame">最终成片</a></li>
-      <p><a href="../index.html" target="content-frame">返回</a></p>
-    </ol>
+<head>
+  <title>My Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="#" />
+  <style>
+    a:hover {
+      color: rgb(225, 62, 17);
+    }
+    
+    #content-frame {
+      width: 70%;
+      height: 100%;
+      float: right;
+      display: none;
+      background-color: #ffffff;
+    }
 
-    <iframe id="content-frame" name="content-frame" src=""></iframe>
-  </body>
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <ol>
+    <p>平时作业</p>
+    <li><a href="影/index.html" onclick="showContent('影/index.html'); return false;">《影》分镜头拉片</a></li>
+    <li><a href="寄生虫/index.html" onclick="showContent('寄生虫/index.html'); return false;">《寄生虫》分镜头拉片</a></li>
+    <p>期末作业</p>
+    <p>微电影《Doppeganger》(《二重身》)</p>
+    <li><a href="剧本/index.html" onclick="showContent('剧本/index.html'); return false;">剧本</a></li>
+    <li><a href="分镜/index.html" onclick="showContent('分镜/index.html'); return false;">分镜</a></li>
+    <li><a href="最终成片/index.html" onclick="showContent('最终成片/index.html'); return false;">最终成片</a></li>
+    <p><a href="../index.html">返回</a></p>
+  </ol>
+
+  <iframe id="content-frame" name="content-frame"></iframe>
+
+  <script>
+    function showContent(url) {
+      var contentFrame = document.getElementById("content-frame");
+      contentFrame.src = url;
+      contentFrame.classList.add("active");
+    }
+  </script>
+</body>
 </html>
