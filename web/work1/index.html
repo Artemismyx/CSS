@@ -40,11 +40,13 @@
   <iframe id="content-frame" name="content-frame"></iframe>
 
   <script>
-    function showContent(url) {
-      var contentFrame = document.getElementById("content-frame");
-      contentFrame.src = url;
-      contentFrame.classList.add("active");
-    }
+    function showContent(url, content) {
+  var contentFrame = document.getElementById("content-frame");
+  contentFrame.src = url;
+  contentFrame.contentWindow.document.body.innerHTML = '<h1>' + content + '</h1>';
+  contentFrame.classList.add("active");
+}
+
   </script>
 </body>
 </html>
