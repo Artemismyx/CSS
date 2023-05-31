@@ -143,11 +143,11 @@
                 <p>二.二创设计</p>
                 <p>1.海底两万里</p>
                 <p class="x">-插画</p>
-                <p class="x">-封皮设计</p>
+                <p class="x">-封皮设计1</p>
                 <p>2.气球上的星期五</p>
-                <p class="x">-封皮设计</p>
+                <p class="x">-封皮设计2</p>
                 <p>3.神秘岛</p>
-                <p class="x">-封皮设计</p>
+                <p class="x">-封皮设计3</p>
                 <p>三.最终汇报</p>
                 <p class="x">-最终汇报</p>
                 <p>四.AI出版社logo</p>
@@ -226,20 +226,24 @@
                 for (let j = 0; j < divBox.length; j++) {
                     divBox[j].style.display = 'none';
                 }
-                if (X[i].textContent === '-brown') {
+                if (X[i].textContent === '-A排版') {
                     divBox[0].style.display = 'block';
-                } else if (X[i].textContent === '-书法练习') {
+                } else if (X[i].textContent === '-B排版') {
                     divBox[1].style.display = 'block';
-                } else if (X[i].textContent === '-海报') {
+                } else if (X[i].textContent === '-封面') {
                     divBox[2].style.display = 'block';
-                } else if (X[i].textContent === '-物料') {
+                } else if (X[i].textContent === '-插画') {
                     divBox[3].style.display = 'block';
-                } else if (X[i].textContent === '-小册子') {
+                } else if (X[i].textContent === '-封面设计1') {
                     divBox[4].style.display = 'block';
-                } else if (X[i].textContent === '-字母大小写') {
+                } else if (X[i].textContent === '-封面设计2') {
                     divBox[5].style.display = 'block';
-                } else if (X[i].textContent === '-DR.png') {
+                } else if (X[i].textContent === '-封面设计3') {
                     divBox[6].style.display = 'block';
+                }else if (X[i].textContent === '-最终汇报') {
+                    divBox[7].style.display = 'block';
+                }else if (X[i].textContent === '-AI出版社logo') {
+                    divBox[8].style.display = 'block';
                 }
             });
         }
