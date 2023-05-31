@@ -209,17 +209,30 @@
     </div>
 
     <script>
-        const  X = document.querySelectorAll('.x')
-        const divBox = document.querySelectorAll('.B>div')
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
 
         for (let i = 0; i < X.length; i++) {
-            X[i].addEventListener('click',function(){
-                console.log(i);
-                for (let i = 0; i < X.length; i++) {
-                    divBox[i].style.display = 'none'
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
                 }
-                divBox[i].style.display = 'block'
-            })            
+                if (X[i].textContent === '-brown') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '-书法练习') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '-海报') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '-物料') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === '-小册子') {
+                    divBox[4].style.display = 'block';
+                } else if (X[i].textContent === '-字母大小写') {
+                    divBox[5].style.display = 'block';
+                } else if (X[i].textContent === '-DR.png') {
+                    divBox[6].style.display = 'block';
+                }
+            });
         }
     </script>
 </body>
